@@ -1,0 +1,187 @@
+/*
+* @author Douglas Rafael
+* @version 0.1
+* Created: 12/01/2019
+*/
+
+/* ============================================ Layout ============================================ */
+
+html, body, .capa {
+	height: 100%;
+}
+
+body {
+	border: 1px solid none;
+	background: url('imagens/capa.png'),
+				url('imagens/ruido.png'),
+				linear-gradient(50deg,#ff4169,#7c26f8); /* O efeito degradê na imagem */
+	background-attachment: fixed; /* Para n repetir de forma indefinida | deixa o background parado */
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+/* -- Barra de navegação -- */
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('imagens/spotify.svg') no-repeat;
+	border: 1px red none;
+	background-size: contain; /* Tamanho img de fundo: 'contain' similar ao height e width */
+	color: transparent; /* Faz sumir o nome Spotify */
+}
+
+/* Customiza todo o navbar */
+nav.navbar-transparent {
+	padding: 15px 0px;
+	background: rgba(0, 0, 0, 0.6); /*Definir opacidade*/
+	border: none;
+}
+
+/* brand ja tem customizações padrões, mas podemos alterá-las */
+.navbar-brand {
+	padding: 5px 15px;
+
+}
+
+.divisor {
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+/* Mudar texto dos menus */
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+	color: white;
+}
+
+/* Mudar texto dos menus (hover) */
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+	color: #9bf0e1;
+	background: none;
+}
+
+/* -- /Barra de navegação -- */
+
+/* -- Imagem de capa principal -- */
+
+.capa {
+	border: 1px solid red;
+	display: table; /* centralizar verticalmente 1 */ 
+	width: 100%; /* centralizar verticalmente 4 */
+}
+
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell; /* centralizar verticalmente 2 */
+	vertical-align: middle; /* centralizar verticalmente 3 */
+}
+
+/* -- Botões da capa principal -- */
+
+.btn-custom {
+	color: white;
+	border-radius: 500px; /* Deixa as bordas arredondadas */
+	border: 1px solid none;
+	-webkit-border-radius: 500px; /* Rodar em outros navegadores */
+	-moz-border-radius: 500px; /* Rodar em outros navegadores */
+	padding: 10px 35px; /* Aumentar os botões */
+	margin: 0 15px; /* Distanciar os botões */
+	text-transform: uppercase; /* Letras maiúsculas */
+	transition: background 0.4s, color 0.4s; /* Transição de background lenta */
+}
+
+.btn-roxo {
+	background: #7c25f8;
+}
+
+.btn-roxo:hover {
+	background-color: #6207e3;
+	color: white; /* Cor no texto */
+}
+
+.btn-branco {
+	border: 2px solid white;
+}
+
+.btn-branco:hover {
+	background-color: #FFF;
+	color: black;
+}
+
+/* Seção Serviço */
+
+#servicos {
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.albuns {
+	padding: 10px 0px 10px 0px;
+}
+
+/* Recursos */
+
+#recursos {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+#recursos h3 {
+	color: #9bf0e1;
+}
+
+.rotacionar {
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg); /*Rotacinar as imgs dos iphones*/
+	padding-left: 80px;
+}
+
+/* Rodapé */
+
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative; /* Por em cima da imagem */
+}
+
+.item-rede-social {
+	float: right;
+	padding-left: 15px;
+}
+
+/* ============================================ Tipografia ============================================ */
+
+h1 {
+	font-size: 100px;
+	font-weight: 900; /* Negrito */
+	letter-spacing: -0.05em; /* Juntar mais as letras */
+	margin-bottom: 50px; /* Dar espaço entre h1 e botões */
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+#rodape h4 {
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#servicos h2, #servicos h3 { /* Somente no h2 vai ficar roxo, pois o h3 ja foi definido acima */
+	color: #7c25f8;
+
+}

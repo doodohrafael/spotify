@@ -1,0 +1,73 @@
+/*
+* @author Douglas Rafael
+* @version 0.1
+* Created: 12/01/2019
+*/
+
+body {
+	font-weight: 400;
+	font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222326;
+}
+
+
+/* ============================================ Layout ============================================ */
+
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('imagens/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+nav.navbar-size {
+	padding: 15px 0px;
+	background: black;
+}
+
+.navbar-brand {
+	padding: 5px 15px;
+}
+
+#banners {
+	background-color: #000/*#19e68c*/;
+	padding-top: 134px;
+    padding-bottom: 107px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 30px;
+
+}
+
+.green-circle { 
+    position: absolute;
+}
+
+
+/* ============================================ Tipografia ============================================ */
+
+h1 {
+	font-size: 56px;
+	padding: 0 30px;
+	line-height: 1.25em;
+	font-weight: 900;
+	display: block;
+	color: white;
+	margin: 80px 30px;
+	font-size: 56px;
+	letter-spacing: -.04em;
+	text-align: center;
+}
+
+p{
+	text-align: center;
+}
+
+img {
+	position: relative;
+	vertical-align: middle;
+}
